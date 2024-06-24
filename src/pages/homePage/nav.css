@@ -1,0 +1,82 @@
+.nav{
+    height: 60px;
+    background-color: #E3EEFC;
+    display: flex;
+    align-items: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет тени */
+}
+
+.leftIcon{
+    width: 55px;
+    height: 30px;
+    background-color: #397BF7;
+    /* margin-top: 12px; */
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 1px; /* Расстояние между квадратами */
+    /* margin-left: 10px; */
+    
+}
+
+.icon div {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 1px; /* Закругление углов */
+}
+
+.leftIcon:hover{
+    background-color: white;
+}
+
+.leftIcon:hover .icon div{
+    background-color: #397BF7;
+}
+
+.settings{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.settings:focus{
+    background-color:#397BF7;
+}
+
+.settings:focus .svg-icon path{
+    fill:white;
+}
+
+.settings:hover{
+    background-color:white;
+}
+
+
+.account{
+    width: 40px;
+    height: 40px;
+    background-color: #397BF7;
+    position: absolute;
+    right: 5px;
+    border-radius: 50%;
+}
+

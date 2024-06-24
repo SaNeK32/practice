@@ -1,0 +1,112 @@
+.newProjectButton{
+    width: 170px;
+    height: 45px;
+    background-color: #E3EEFC;
+    margin-top: 30px;
+    border: none;
+    color: #397BF7;
+    font-size: 15px;
+    margin-left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.newProjectButton:hover{
+    color: white;
+    background-color: #397BF7;
+}
+
+.searchBar{
+    width: 1120px;
+    height: 35px;
+    background-color: #F7F9FA;
+    border: none;
+    /* margin-left: 40px; */
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.searchBarDiv{
+    width: 1150px;
+    height: 35px;
+    background-color: #F7F9FA;
+    border: none;
+    /* margin-left: 40px; */
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 250px;
+    /* display: flex; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.searchBarDiv .svgIconSearch{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.searchBar::placeholder{
+    font-size: 15px;
+}
+
+.divUnderSearchBar{
+    width: 1150px;
+    height: 35px;
+    margin-left: 250px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Скрываем стандартный чекбокс, но оставляем его функциональность */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #397BF7; /* Цвет обводки */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  /* Стиль для галочки */
+  input[type="checkbox"]:checked {
+    background-color: #397BF7; /* Цвет фона для отмеченного чекбокса */
+  }
+  
+  input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.285,2.285L9,13.57l-4.285-4.285-2.285,2.285L9,18.14l13.57-13.57L20.285,2.285z"/></svg>') center / contain no-repeat;
+  }
+
+.deleteIcon{
+    /* margin-left: 30px; */
+}
+
+.deleteButton{
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background:none;
+}
+
+.counterItems{
+    position: absolute;
+    right: 15px;
+    color: #397BF7;
+    font-weight: 500;
+}
